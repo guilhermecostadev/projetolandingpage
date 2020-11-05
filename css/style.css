@@ -9,7 +9,7 @@
     background-color: #F9003D;/*Altera a cor de fundo*/
 }
 .topo nav{
-    width: 100%; /* %, vw, em*/
+    width: 95%; /* %, vw, em*/
     max-width: 1200px;
     height: 60px;
     /* background-color: #000; */
@@ -52,7 +52,7 @@
     background-position: bottom;
 }
 .content{
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
     height: 100%;
     /* background-color: rgba(204, 204, 204, 0.37); */
@@ -110,10 +110,13 @@
 .conteudo_sobre{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     
 }
 .conteudo_sobre img{
-    width: 491px;
+    width: 45%;
+    max-width: 500px;
+    min-width: 450;
 }
 .texto_sobre{
     width: 600px;
@@ -225,3 +228,59 @@
 
 }
 
+@media screen and (max-width: 1199px){
+ .bk_sobre{
+     height: auto;
+     padding-bottom:40px;
+     
+ }
+.sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .bk_sobre .content{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+.conteudo_sobre{
+    justify-content: center;
+}
+.conteudo_sobre img{
+    width: 100%;
+    max-width:1200px;
+    margin-bottom: 2em;
+}
+.texto_sobre{
+    width: 800px;
+}
+}
+
+@media screen and (max-width:991px) {
+    .conteudo_sobre img{
+        max-width: 700px;
+        margin-left: 2em;
+    }
+    .bk_sobre{
+padding-bottom:75px ;
+    }
+
+    .info_card{
+        text-align: center;
+    }
+.bk_info{
+    margin:auto;
+}
+
+        .text-endereco{
+            flex-direction: column;
+            height: auto;
+        }
+.text-endereco img{
+    position: unset;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+}
